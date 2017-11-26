@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="turn_table" name="turn_table_driver" type="turn_table_driver" >
+		<param name="loop_hz" type="double" value="10.0" />
+		<rosparam file="$(find turn_table)/cfg/homming.yaml" />
+		<param name="set_init_angle" type="bool" value="true" />
+		<param name="enable_control_loop" type="bool" value="true" />
+	</node>
+
+</launch>
